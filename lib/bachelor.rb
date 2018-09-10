@@ -24,7 +24,6 @@ def get_contestant_name(data, occupation)
       contestant.each do |stat_keys, stats|
         if contestant["occupation"] == occupation
           occ_name = contestant["name"]
-          binding.pry
         end 
       end
     end
