@@ -32,7 +32,17 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  area_women = []
+  data.each do |season_number, contestant_array|
+    contestant_array.each do |contestant|
+      contestant.each do |stat_keys, stats|
+        if contestant["hometown"] == hometown
+          area_women.push(contestant["name"])
+        end
+      end
+    end
+  end
+    area_women.length
 end
 
 def get_occupation(data, hometown)
