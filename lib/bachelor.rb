@@ -27,6 +27,7 @@ def get_contestant_name(data, occupation)
           occ_name = 
         end 
       end
+    end
   end
 end
 
