@@ -37,12 +37,12 @@ def count_contestants_by_hometown(data, hometown)
   data.each do |season_number, contestant_array|
     contestant_array.each do |contestant|
       contestant.each do |stat_keys, stats|
-        while contestant["hometown"] == hometown
+        if contestant["hometown"] == hometown
           counter += 1
         end
-        binding.pry
-        counter
       end
+      binding.pry
+      counter
     end
   end
   binding.pry
