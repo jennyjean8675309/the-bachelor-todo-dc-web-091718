@@ -24,7 +24,7 @@ def get_contestant_name(data, occupation)
       contestant.each do |stat_keys, stats|
         if contestant["occupation"] == occupation
           binding.pry
-          occ_name = 
+          occ_name = "howdy"
         end 
       end
     end
