@@ -43,8 +43,9 @@ def count_contestants_by_hometown(data, hometown)
         else 
           counter
         end
-        binding.pry
+      
       end
+      binding.pry
   
   
     end
