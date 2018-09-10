@@ -18,10 +18,18 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
+  occ_name = ''
   data.each do |season_number, contestant_array|
     contestant_array.each do |contestant|
+      contestant.each do |stat_keys, stats|
+        if contestant["occupation"] == occupation
+          binding.pry
+          occ_name = 
+        end 
+      end
   end
 end
+
       
 end
 
