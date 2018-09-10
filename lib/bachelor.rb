@@ -40,8 +40,6 @@ def count_contestants_by_hometown(data, hometown)
       contestant.each do |stat_keys, stats|
         if contestant["hometown"] == hometown
           counter += 1
-        else 
-          counter
         end
       
       end
