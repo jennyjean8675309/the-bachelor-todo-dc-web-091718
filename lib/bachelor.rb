@@ -20,6 +20,8 @@ end
 def get_contestant_name(data, occupation)
   data.each do |season_number, contestant_array|
     contestant_array.each do |contestant|
+  end
+end
       
 end
 
