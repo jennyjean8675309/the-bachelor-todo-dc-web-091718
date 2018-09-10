@@ -23,7 +23,8 @@ def get_contestant_name(data, occupation)
     contestant_array.each do |contestant|
       contestant.each do |stat_keys, stats|
         if contestant["occupation"] == occupation
-          occ_name = contestant[:name]
+          occ_name = contestant["name"]
+          binding.pry
         end 
       end
     end
