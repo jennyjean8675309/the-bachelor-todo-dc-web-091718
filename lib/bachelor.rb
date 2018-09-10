@@ -65,5 +65,10 @@ def get_average_age_for_season(data, season)
     end
   end
   ages
-  
+  sum = 0
+  ages.each do |i|
+    sum += i
+  end
+  binding.pry
+  ages
 end
