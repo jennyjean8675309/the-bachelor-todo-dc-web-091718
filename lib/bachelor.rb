@@ -37,7 +37,7 @@ def count_contestants_by_hometown(data, hometown)
     contestant_array.each do |contestant|
       contestant.each do |stat_keys, stats|
         if contestant["hometown"] == hometown
-          area_women.push(contestant["name"])
+          area_women << (contestant["name"])
         end
         binding.pry
       end
