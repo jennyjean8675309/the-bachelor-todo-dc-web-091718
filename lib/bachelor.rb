@@ -39,10 +39,10 @@ def count_contestants_by_hometown(data, hometown)
         if contestant["hometown"] == hometown
           area_women << (contestant["name"])
         end
-        binding.pry
       end
     end
   end
+  binding.pry
     area_women.length
 end
 
